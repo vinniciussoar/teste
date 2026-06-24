@@ -53,8 +53,8 @@
     <div class="hero__grid">
       <div class="hero__content">
         <p class="hero__eyebrow">Odontología equina · Colombia</p>
-        <h1 class="hero__title">Salud dental equina, evaluada y tratada <em>en su haras</em></h1>
-        <p class="hero__text">El Dr. Diego Velásquez realiza diagnóstico, odontoplastía y cirugía dental equina con equipamiento especializado, desplazándose hasta donde está el caballo.</p>
+        <h1 class="hero__title">Diagnóstico odontológico equino en campo, <em>sin estrés de transporte</em></h1>
+        <p class="hero__text">El Dr. Diego Velásquez se desplaza hasta el haras con el equipamiento completo de diagnóstico y realiza el procedimiento en el propio ambiente del animal.</p>
         <p class="hero__meta"><strong>Formación de posgrado</strong> en cirugía odontológica equina · Atención en haras de toda Colombia.</p>
         <div class="hero__actions">
           <a href="https://wa.link/wzy3jo" class="btn btn--primary" target="_blank" rel="noopener">
@@ -89,19 +89,19 @@
       </div>
       <div class="diff__grid">
         <article class="diff__item" data-reveal data-delay="1">
-          <div class="diff__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-          <h3>Formación de posgrado</h3>
-          <p>Formación de posgrado en cirugía odontológica equina, una especialización poco común en Colombia.</p>
+          <span class="diff__num">01</span>
+          <h3>En su haras</h3>
+          <p>El especialista se desplaza hasta el animal. Cero estrés de transporte y cero riesgo de lesión en tránsito.</p>
         </article>
         <article class="diff__item" data-reveal data-delay="2">
-          <div class="diff__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13"/><path d="M9 21v-6h6v6"/></svg></div>
-          <h3>Atención en su haras</h3>
-          <p>El consultorio se desplaza hasta el caballo: radiografía digital, oroscopia y procedimientos quirúrgicos sin el estrés del transporte del animal.</p>
+          <span class="diff__num">02</span>
+          <h3>Diagnóstico de precisión</h3>
+          <p>Radiología digital de cabeza equina y evaluación intraoral con oroscopia, realizadas directamente en el haras.</p>
         </article>
         <article class="diff__item" data-reveal data-delay="3">
-          <div class="diff__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></div>
-          <h3>Instrumental específico</h3>
-          <p>Equipamiento dedicado a odontología equina de alta complejidad: diagnóstico por imagen, técnicas mínimamente invasivas y protocolos quirúrgicos actuales.</p>
+          <span class="diff__num">03</span>
+          <h3>Registro y seguimiento</h3>
+          <p>Cada procedimiento queda documentado en video y ficha clínica para el acompañamiento evolutivo del caso.</p>
         </article>
       </div>
     </div>
@@ -126,7 +126,7 @@
           Volver a los servicios
         </button>
         <div class="serv__detail-grid">
-          <!-- espacio de imagen en blanco (a definir con el Dr. Diego) -->
+          <!-- TODO: foto real do procedimiento — sustituir este espacio por la imagen que enviará el Dr. Diego -->
           <figure class="serv__detail-media" aria-label="Espacio para imagen del servicio">
             <span class="serv__detail-ph">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
@@ -158,7 +158,7 @@
         <!-- CASO 1 — real, con vídeo -->
         <article class="case" data-reveal data-delay="1">
           <div class="case__media">
-            <!-- Vídeo via YouTube (substituir VIDEO_ID pelo link que o Dr. Diego enviar) -->
+            <!-- TODO: substituir VIDEO_ID pelo ID real do video de YouTube que enviará o Dr. Diego -->
             <div class="case__video" data-yt="VIDEO_ID">
               <button class="case__play" type="button" aria-label="Reproducir video">
                 <span class="case__play-icon" aria-hidden="true">
@@ -180,34 +180,22 @@
           </div>
         </article>
 
-        <!-- nota discreta: más casos se agregarán con material real -->
-        <aside class="case__soon" data-reveal data-delay="2">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          <div>
-            <h3 class="case__soon-title">Más casos en camino</h3>
-            <p class="case__soon-text">Nuevos casos clínicos — diagnóstico, procedimiento y resultado — se irán publicando con material real autorizado por los propietarios.</p>
+        <!-- CASO 2 — placeholder en formato de ficha clínica, diferenciado por tipo.
+             TODO: reemplazar por un segundo caso real (Exodoncia o Radiología) con los datos clínicos que envíe el Dr. Diego -->
+        <article class="case case--placeholder" data-reveal data-delay="2">
+          <div class="case__body">
+            <span class="case__tag case__tag--soon">Exodoncia · por publicar</span>
+            <h3 class="case__title">Próximo caso clínico</h3>
+            <dl class="case__steps">
+              <div class="case__step"><dt>Problema</dt><dd class="case__ph">Por documentar</dd></div>
+              <div class="case__step"><dt>Diagnóstico</dt><dd class="case__ph">Por documentar</dd></div>
+              <div class="case__step"><dt>Procedimiento</dt><dd class="case__ph">Por documentar</dd></div>
+              <div class="case__step"><dt>Resultado</dt><dd class="case__ph">Por documentar</dd></div>
+            </dl>
+            <p class="case__note">Se publicará con material clínico real, autorizado por el propietario.</p>
           </div>
-        </aside>
+        </article>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== HISTORIA ===================== -->
-  <!-- TEXTO GENÉRICO — el Dr. Diego debe validar/ajustar fechas y datos reales -->
-  <section class="section story" id="historia">
-    <div class="container story__grid">
-      <div class="story__text" data-reveal>
-        <p class="eyebrow">Nuestra historia</p>
-        <h2 class="section-title">Odontología equina hecha con criterio clínico</h2>
-        <p class="story__lead">SED — Specialized Equine Dentistry nace de una convicción simple: la boca del caballo merece el mismo rigor diagnóstico que cualquier otra área de la medicina veterinaria.</p>
-        <p class="story__p">Con formación de posgrado en cirugía odontológica equina, el Dr. Diego Velásquez estructuró un servicio especializado que se desplaza hasta el haras, con instrumental y diagnóstico por imagen que normalmente solo se encuentran en centros de referencia.</p>
-        <p class="story__p">Hoy la propuesta sigue siendo la misma: diagnóstico preciso, procedimientos mínimamente invasivos y seguimiento real de cada caso.</p>
-      </div>
-      <div class="story__marks" data-reveal data-delay="1">
-        <div class="story__mark"><dt>Formación</dt><dd>Posgrado en cirugía odontológica equina · Colombia</dd></div>
-        <div class="story__mark"><dt>Enfoque</dt><dd>Atención en el haras, sin estrés de transporte para el animal</dd></div>
-        <div class="story__mark"><dt>Compromiso</dt><dd>Diagnóstico por imagen y seguimiento de cada procedimiento</dd></div>
       </div>
     </div>
   </section>
@@ -221,12 +209,13 @@
       <div class="about__text-wrap" data-reveal data-delay="1">
         <p class="eyebrow">El especialista</p>
         <h2 class="about__title">Dr. Diego <em>Velásquez</em></h2>
-        <p class="about__text">Médico Veterinario y Zootecnista con <strong>formación de posgrado en cirugía odontológica equina</strong> — una especialización poco común en la región.</p>
-        <p class="about__text">Atiende haras de cría y caballos deportivos, con un enfoque que prioriza el diagnóstico preciso y el bienestar del animal en cada procedimiento.</p>
+        <!-- TODO: texto en primera persona — el Dr. Diego debe validar antes de publicar -->
+        <p class="about__text">Soy especialista en odontología equina, con <strong>formación de posgrado en Colombia</strong>. Trabajo directamente en campo porque creo que el mejor diagnóstico se hace en el ambiente del animal.</p>
+        <p class="about__text">Cada procedimiento queda registrado para que usted pueda acompañar la evolución del caso. Atiendo haras de cría y caballos deportivos en toda Colombia.</p>
         <ul class="about__creds">
           <li class="about__cred">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-            <div><div class="about__cred-t">Maestría en clínica quirúrgica veterinaria</div><div class="about__cred-s">Formación de posgrado · Colombia</div></div>
+            <div><div class="about__cred-t">Formación de posgrado en odontología equina</div><div class="about__cred-s">Colombia</div></div>
           </li>
           <li class="about__cred">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4l6 6M3 21l9-9M3 21l3-1 12-12-2-2L4 18z"/></svg>
@@ -247,7 +236,7 @@
       <div class="cover__text" data-reveal>
         <p class="eyebrow">Dónde atendemos</p>
         <h2 class="section-title">Atención en haras de toda Colombia</h2>
-        <p class="cover__lead">El consultorio se desplaza hasta donde está el caballo. Coordinamos la visita según la ubicación del haras.</p>
+        <p class="cover__lead">El consultorio se desplaza hasta donde está el caballo. Base en Bogotá y alrededores, con desplazamiento a haras de todo el país.</p>
         <ul class="cover__list">
           <li><span class="cover__dot" aria-hidden="true"></span> Haras de cría y caballos deportivos</li>
           <li><span class="cover__dot" aria-hidden="true"></span> Desplazamiento con instrumental completo</li>
@@ -359,7 +348,7 @@ l-84 87 -33 123 c-47 182 -42 172 -101 172 -50 0 -50 0 -50 33 0 17 -3 42 -6
           <circle class="cover__map-pin" cx="560" cy="560" r="13"/>
           <circle class="cover__map-pulse" cx="560" cy="560" r="13"/>
         </svg>
-        <figcaption class="cover__map-cap">Cobertura nacional</figcaption>
+        <figcaption class="cover__map-cap">Cobertura nacional · Bogotá y alrededores</figcaption>
       </figure>
     </div>
   </section>
@@ -405,13 +394,14 @@ l-84 87 -33 123 c-47 182 -42 172 -101 172 -50 0 -50 0 -50 33 0 17 -3 42 -6
   <section class="cta">
     <div class="container">
       <div class="cta__box" data-reveal>
-        <h2 class="cta__title">Agende la evaluación de su caballo</h2>
-        <p class="cta__text">Cuéntenos los signos que observa. Le indicamos si requiere atención odontológica y coordinamos la visita a su haras.</p>
+        <h2 class="cta__title">¿Cuándo fue el último examen odontológico de su caballo?</h2>
+        <p class="cta__text">La mayoría de los problemas de masticación y sinusitis del caballo tienen origen dental. El diagnóstico precoz evita complicaciones y cirugías más complejas.</p>
         <div class="cta__actions">
           <a href="https://wa.link/wzy3jo" class="btn btn--light" target="_blank" rel="noopener">
-            Escribir por WhatsApp
+            Solicitar evaluación
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
+          <a href="#casos" class="btn btn--outline-light">Ver casos clínicos</a>
         </div>
       </div>
     </div>
