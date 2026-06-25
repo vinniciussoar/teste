@@ -353,7 +353,11 @@ function initPrivacyDialog() {
   $('#openPrivacy')?.addEventListener('click', () => dialog.showModal());
   $('#closePrivacy')?.addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', (e) => {
-    if (e.target === dialog) dialog.close();
+    // el cuadro del <dialog> no ocupa toda la pantalla, así que comprobamos
+    // las coordenadas del clic contra su rect en vez de comparar e.target
+    const r = dialog.getBoundingClientRect();
+    const inside = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
+    if (!inside) dialog.close();
   });
 }
 
